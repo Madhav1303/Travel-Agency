@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+  display: flex;
+  align-items:baseline;
+  gap: 20px;
+  padding: 20px;
+}
+.links{
+    display: flex;
+    gap: 100px;
+    padding:10px;
+    align-items: baseline;
+}
+#btn-login{
+    border: 2px solid;
+    color: yellowgreen;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+#btn-login:hover{
+    cursor: pointer;
+    color:blanchedalmond;
+}
+#btn-signup{
+    border: 2px solid;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+#btn-signup:hover{
+    cursor: pointer;
+    color:red;
+}
+.hero{
+    display: flex;
+    min-height:100vh;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-image: url(https://img.freepik.com/free-photo/beautiful-water-villas-tropical-maldives-island-sunrise-time_1232-4484.jpg?semt=ais_user_personalization&w=740&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.hero::before{
+    position: absolute;
+    content:"";
+    top: 0;
+    bottom :0;
+    right:0;
+    left:0;
+    background-color : rgba(0,0,0,0.4);  /*format :rgba(red, green, blue, transparency)*/
+    z-index:1;
+}
+.content{
+    z-index:2;
+    position: relative;
+}
+.btn-explore{
+    border: 2px solid;
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+.signup-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+#signup-form{
+    margin-top:20px;
+}
+input{
+    border:1px solid black;
+    border-radius: 5px;
+}
+footer{
+    display: flex;
+    color:white;
+    background-color: black;
+    padding:10px;
+    flex-direction: row;
+    justify-content: center;
+    margin:10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.card-body h3 {
+  margin: 0 0 6px;
+}
+
+.card-body p {
+  margin: 6px 0;
+}
+
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0 18px;
+}
+
+.filters input, .filters select, .filters button {
+  padding: 8px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotels</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <h1>Explore Hotels</h1>
+
+  <!-- Filters -->
+  <div class="filters">
+    <input id="searchInput" type="text" placeholder="Search by hotel name..." />
+
+    <label>
+      Max price/night:
+      <input id="maxPrice" type="number" placeholder="e.g. 4000" />
+    </label>
+
+    <label>
+      Sort:
+      <select id="sortSelect">
+        <option value="">None</option>
+        <option value="rating-desc">Rating: High → Low</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+      </select>
+    </label>
+
+    <button id="clearBtn">Clear</button>
+  </div>
+
+  <div id="hotelsContainer"></div>
+
+  <script src="../js/hotels.js"></script>
+</body>
+</html>

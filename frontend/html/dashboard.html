@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Trip Planner</title>
+  <link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+
+<body>
+  <!-- Protect page: if not logged in, go to login -->
+  <script>
+    const token = localStorage.getItem("token");
+    if (!token) window.location.href = "./login.html";
+  </script>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="brand">LM Travel</span>
+    </div>
+    <div class="nav-right">
+      <a href="./destinations.html">Destinations</a>
+      <a href="./hotels.html">Hotels</a>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </div>
+  </nav>
+
+  <!-- Main 2-column layout -->
+  <main class="container">
+    <!-- Left: Trip Builder -->
+    <section class="card">
+      <h2>Trip Builder</h2>
+
+      <div class="grid2">
+        <div class="field">
+          <label>Destination</label>
+          <select id="destinationSelect">
+            <option value="">Select Destination</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Hotel</label>
+          <select id="hotelSelect">
+            <option value="">Select Hotel</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Days</label>
+          <input id="days" type="number" min="1" value="3" />
+        </div>
+
+        <div class="field">
+          <label>People</label>
+          <input id="people" type="number" min="1" value="2" />
+        </div>
+
+        <div class="field">
+          <label>Travel (total)</label>
+          <input id="travelTotal" type="number" min="0" value="4000" />
+        </div>
+
+        <div class="field">
+          <label>Food (per person per day)</label>
+          <input id="foodPerPersonPerDay" type="number" min="0" value="600" />
+        </div>
+
+        <div class="field">
+          <label>Local Transport (per day)</label>
+          <input id="localTransportPerDay" type="number" min="0" value="800" />
+        </div>
+
+        <div class="field">
+          <label>Activities (optional total)</label>
+          <input id="activitiesTotal" type="number" min="0" value="0" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="resetBtn" class="btn btn-secondary" type="button">Reset</button>
+      </div>
+
+      <p class="hint">
+        Select destination + hotel from backend. Totals update automatically.
+      </p>
+    </section>
+
+    <!-- Right: Budget Summary -->
+    <section class="card">
+      <h2>Budget Summary</h2>
+
+      <div class="summary">
+        <div class="row"><span>Hotel</span><span id="hotelCost">₹0</span></div>
+        <div class="row"><span>Food</span><span id="foodCost">₹0</span></div>
+        <div class="row"><span>Local Transport</span><span id="localCost">₹0</span></div>
+        <div class="row"><span>Travel</span><span id="travelCost">₹0</span></div>
+        <div class="row"><span>Activities</span><span id="activitiesCost">₹0</span></div>
+
+        <hr />
+
+        <div class="row total">
+          <span>Total Estimated</span>
+          <span id="grandTotal">₹0</span>
+        </div>
+
+        <div class="row muted">
+          <span>Per Person</span>
+          <span id="perPerson">₹0</span>
+        </div>
+      </div>
+
+      <div class="note">
+        <b>Destination:</b> <span id="destinationPreview">—</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>© LM Travel Agency</small>
+  </footer>
+
+  <script src="../js/dashboard.js"></script>
+
+  <script>
+    // Logout
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("token");
+      window.location.href = "./login.html";
+    });
+  </script>
+</body>
+</html>
