@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "destinationId": 1,
+    "name": "Seaside Resort",
+    "location": "Goa",
+    "rating": 3.5,
+    "pricePerNight": 3200,
+    "image": "/images/seaside_resort.jpg"
+  },
+  {
+    "id": 2,
+    "destinationId": 2,
+    "name": "Himalayan Stay",
+    "location": "Manali",
+    "rating": 4,
+    "pricePerNight": 2800,
+    "image": "/images/himalayan_stay.jpg"
+  },
+  {
+    "id": 3,
+    "destinationId": 1774289488516,
+    "name": "Taj",
+    "location": "Mumbai",
+    "rating": 4.8,
+    "pricePerNight": 4000,
+    "image": "/images/taj_hotel.jpg"
+  },
+  {
+    "id": 4,
+    "destinationId": 4,
+    "name": "Hotel Namaskar ",
+    "location": "Kerala",
+    "rating": 3.2,
+    "pricePerNight": 2000,
+    "image": "/images/hotel_namaskar.jpg"
+  },
+  {
+    "id": 1774239955104,
+    "destinationId": 1774289234065,
+    "name": "Alankar",
+    "location": "Tamil Nadu",
+    "pricePerNight": 4500,
+    "rating": 5,
+    "image": "/images/Alankar_hotel.png"
+  },
+  {
+    "id": 1774278769128,
+    "destinationId": 3,
+    "name": "Savera",
+    "location": "Hyderabad",
+    "pricePerNight": 2400,
+    "rating": 3.5,
+    "image": "/images/Hotel_Savera.png"
+  },
+  {
+    "id": 1774330819058,
+    "name": "Zaitoon",
+    "location": "Tamil Nadu",
+    "pricePerNight": 5000,
+    "rating": 4.5,
+    "image": "/images/zaitoon.png"
+  }
+]

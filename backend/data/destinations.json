@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "location": "Goa",
+    "country": "India",
+    "price": 12000,
+    "image": "/images/goa.jpg",
+    "description": "Beaches, nightlife, and Portuguese heritage."
+  },
+  {
+    "id": 2,
+    "location": "Manali",
+    "country": "India",
+    "price": 15000,
+    "image": "/images/manali.jpg",
+    "description": "Snowy mountains and adventure activities."
+  },
+  {
+    "id": 3,
+    "location": "Hyderabad",
+    "country": "India",
+    "price": 12500,
+    "image": "/images/hyderabad.jpg",
+    "description": "City of Pearls"
+  },
+  {
+    "id": 4,
+    "location": "Kerala",
+    "country": "India",
+    "price": 10000,
+    "image": "/images/kerala.jpg",
+    "description": "God's Own Country"
+  },
+  {
+    "id": 1774285023356,
+    "location": "Bangalore",
+    "country": "India",
+    "price": 20000,
+    "image": "/images/bangalore.png",
+    "description": "Silicon Valley of India"
+  },
+  {
+    "id": 1774289234065,
+    "location": "Tamil Nadu",
+    "country": "India",
+    "price": 15000,
+    "image": "/images/tamil_nadu.png",
+    "description": "ancient Dravidian temples, rich cultural heritage, and influential Tamil literature"
+  },
+  {
+    "id": 1774289488516,
+    "location": "Mumbai",
+    "country": "India",
+    "price": 30000,
+    "image": "/images/mumbai.png",
+    "description": "City of Dreams and hub of the Bollywood film"
+  }
+]
